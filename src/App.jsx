@@ -1,18 +1,17 @@
-// src/App.jsx
 import React from 'react';
 import Navbar from './components/Navbar';
+import HomeSection from './components/HomeSection';
+import About from './pages/About';
 
 function App() {
   return (
     <div>
       <Navbar />
-      
-      <section id="home" className="h-screen bg-blue-50 flex items-center justify-center">
-        <h1 className="text-5xl font-bold">Hi! I am Ameya</h1>
-      </section>
+      <HomeSection />
+
       
       <section id="about" className="h-screen bg-green-50 flex items-center justify-center">
-        <h1 className="text-5xl font-bold">About Me</h1>
+        <h1 className="text-5xl font-bold"><About/></h1>
       </section>
       
       <section id="skills" className="h-screen bg-yellow-50 flex items-center justify-center">
