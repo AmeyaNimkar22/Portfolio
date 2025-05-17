@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import { SiLeetcode } from 'react-icons/si';
-import contactImg from '../assets/contactImg-removebg-preview.png';
+import contactImg from '../assets/contactImg-removebg-preview1.png';
 
 export default function Contact() {
   return (
