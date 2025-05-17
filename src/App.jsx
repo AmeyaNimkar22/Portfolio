@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import HomeSection from './components/HomeSection';
 import About from './pages/About';
 import SkillGrid from './components/SkillGrid';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
       </section>
       
       <section id="contact" className="min-h-screen bg-purple-50 flex items-center justify-center py-16">
-        <h1 className="text-5xl font-bold">Contact Me</h1>
+        <h1 className="text-5xl font-bold"><Contact/></h1>
       </section>
     </div>
   );
