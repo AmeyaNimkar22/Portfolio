@@ -4,6 +4,7 @@ import HomeSection from './components/HomeSection';
 import About from './pages/About';
 import SkillGrid from './components/SkillGrid';
 import Contact from './pages/Contact';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -19,11 +20,11 @@ function App() {
         <SkillGrid />
       </section>
       
-      <section id="projects" className="min-h-screen bg-pink-50 flex items-center justify-center py-16">
-        <h1 className="text-5xl font-bold">My Projects</h1>
+      <section id="projects" className="min-h-screen  flex items-center justify-center py-16">
+        <h1 className="text-5xl font-bold"><Projects/></h1>
       </section>
       
-      <section id="contact" className="min-h-screen bg-purple-50 flex items-center justify-center py-16">
+      <section id="contact" className="min-h-screen  flex items-center justify-center py-16">
         <h1 className="text-5xl font-bold"><Contact/></h1>
       </section>
     </div>

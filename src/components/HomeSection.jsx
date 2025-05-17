@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import HomeImage from "../assets/DeveloperImage.png";
+import HomeImage from "../assets/DeveloperImage-removebg-preview.png";
 
 const texts = ["<>","Hi,", "my name is", "Ameya Nimkar","</>"];
 
