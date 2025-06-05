@@ -47,7 +47,7 @@ function Navbar({ darkMode, setDarkMode }) {
         {/* Mobile Hamburger Icon */}
         <div className="block lg:hidden">
           <i
-            className="bx bx-menu text-4xl cursor-pointer z-50"
+            className="bx bx-menu text-4xl cursor-pointer z-50 dark:text-gray-300"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Open menu"
             role="button"
@@ -62,7 +62,7 @@ function Navbar({ darkMode, setDarkMode }) {
         <div
           className={`absolute lg:hidden top-full left-0 w-full 
             flex flex-col items-center font-semibold text-lg shadow-md
-            transition-all duration-300 ease-in-out dark:bg-gray-900
+            transition-all duration-300 ease-in-out dark:text-gray-300 dark:bg-gray-900
             ${isMenuOpen ? "block opacity-100 scale-100 bg-white" : "opacity-0 scale-95 pointer-events-none"}`}
           style={{ zIndex: 40 }}
         >
