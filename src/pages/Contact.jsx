@@ -5,18 +5,18 @@ import contactImg from '../assets/contactImg-removebg-preview1.png';
 
 export default function Contact() {
   return (
-    <section className="flex flex-col lg:flex-row min-h-screen items-center bg-white px-8 md:px-20 py-12">
+    <section className="flex flex-col lg:flex-row min-h-screen items-center bg-white px-8 md:px-20 py-12 dark:bg-gray-900 dark:text-gray-300">
       {/* Text Section */}
-      <div className="flex flex-col justify-center lg:w-1/2 mb-12 lg:mb-0">
-        <h2 className="text-4xl font-bold text-center  text-gray-700  md:text-5xl  text-grey-700 mb-6 lg:text-left">
+      <div className="flex flex-col justify-center lg:w-1/2 mb-12 lg:mb-0 dark:bg-gray-900 dark:text-gray-300">
+        <h2 className="text-4xl font-bold text-center  text-gray-700  md:text-5xl  text-grey-700 mb-6 lg:text-left dark:bg-gray-900 dark:text-gray-300 dark:text-purple-500">
           Contact Me
         </h2>
-        <p className="text-xl font-semibold text-gray-700 mb-8 leading-relaxed">
+        <p className="text-xl font-semibold text-gray-700 mb-8 leading-relaxed dark:bg-gray-900 dark:text-gray-300">
           If you have any inquiries or would like to discuss a potential project, feel free to reach out to me through the contact email provided below. 
           I'm always open to collaboration and love working with new clients. Additionally, if you simply want to connect or have any questions about my work, 
           don't hesitate to drop me a message. Looking forward to hearing from you soon!
         </p>
-        <div className="flex gap-6 text-3xl md:text-4xl text-purple-700">
+        <div className="flex gap-6 text-3xl md:text-4xl text-purple-700 dark:text-purple-600">
           <a href="mailto:ameyanimkar22@gmail.com" className="hover:text-gray-500">
             <FaEnvelope />
           </a>
@@ -30,7 +30,7 @@ export default function Contact() {
             <SiLeetcode />
           </a>
         </div>
-        <p className="text-xl font-semibold text-purple-800 mt-8">ameyanimkar22@gmail.com</p>
+        <p className="text-xl font-semibold text-purple-800 mt-8 dark:text-purple-600">ameyanimkar22@gmail.com</p>
       </div>
 
       {/* Image Section - Proper Central Alignment */}

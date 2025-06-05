@@ -31,14 +31,14 @@ export default function HomeSection() {
   }, [charIndex, lineIndex]);
 
   return (
-    <section id="home" className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-8 md:px-32 gap-10">
+    <section id="home" className="min-h-screen flex flex-col-reverse md:flex-row items-center justify-center px-8 md:px-32 gap-10 bg-white dark:bg-gray-900">
       {/* Text Section */}
       <div className="text-center md:text-left flex flex-col gap-2 z-20 md:w-1/2">
-        <p className="text-3xl md:text-4xl font-semibold text-gray-800">{displayedLines[0]}</p>
-        <p className="text-3xl md:text-4xl font-semibold text-gray-800">{displayedLines[1]}</p>
-        <p className="text-3xl md:text-4xl font-semibold text-gray-800">{displayedLines[2]}</p>
-        <p className="text-5xl md:text-7xl font-extrabold text-purple-600">{displayedLines[3]}</p>
-        <p className="text-3xl md:text-4xl font-semibold text-gray-800">{displayedLines[4]}</p>
+        <p className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-300">{displayedLines[0]}</p>
+        <p className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-300">{displayedLines[1]}</p>
+        <p className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-300">{displayedLines[2]}</p>
+        <p className="text-5xl md:text-7xl font-extrabold text-purple-600 ">{displayedLines[3]}</p>
+        <p className="text-3xl md:text-4xl font-semibold text-gray-800 dark:text-gray-300">{displayedLines[4]}</p>
       </div>
 
       {/* Image Section */}

@@ -16,19 +16,19 @@ function App() {
 
       <HomeSection />
       
-      <section id="about" className="min-h-screen flex items-center justify-center py-16">
+      <section id="about" className="min-h-screen flex items-center justify-center py-16 dark:bg-gray-900 dark:text-gray-300">
         <About />
       </section>
       
-      <section id="skills" className="min-h-screen py-16 px-6">
+      <section id="skills" className="min-h-screen py-16 px-6 dark:bg-gray-900 dark:text-gray-300">
         <SkillGrid />
       </section>
       
-      <section id="projects" className="min-h-screen flex items-center justify-center py-16">
+      <section id="projects" className="min-h-screen flex items-center justify-center py-16 dark:bg-gray-900 dark:text-gray-300">
         <h1 className="text-5xl font-bold"><Projects /></h1>
       </section>
       
-      <section id="contact" className="min-h-screen flex items-center justify-center py-16">
+      <section id="contact" className="min-h-screen flex items-center justify-center py-16 dark:bg-gray-900 dark:text-gray-300">
         <h1 className="text-5xl font-bold"><Contact /></h1>
       </section>
     </div>

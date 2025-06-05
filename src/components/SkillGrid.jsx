@@ -30,26 +30,26 @@ const skills = {
 
 export default function SkillGrid() {
   return (
-    <section className="py-16 px-4 bg-white">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-800">My Skills</h2>
+    <section className="py-16 px-4 bg-white  dark:bg-gray-900 dark:text-gray-300 ">
+      <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:bg-gray-900 dark:text-gray-300 dark:text-purple-500">My Skills</h2>
       
 
       {/* Staggered Skill Category Layout */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto ">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto  dark:bg-gray-900 dark:text-gray-300  ">
         {Object.keys(skills).map((category, index) => (
-          <div key={index} className="border-2 border-purple-300 bg-gray-100 rounded-2xl p-8  shadow-md hover:scale-105 transition-transform">
-            <h3 className="text-3xl font-semibold  text-gray-700 mb-6 capitalize text-center">{category}</h3>
+          <div key={index} className="border-2 border-purple-300 dark:border-purple-600 dark:bg-gray-900 dark:text-gray-300  bg-gray-100 rounded-2xl p-8  shadow-md hover:scale-105 transition-transform">
+            <h3 className="text-3xl font-semibold  text-gray-700 mb-6 capitalize text-center  dark:bg-gray-900 dark:text-gray-300 ">{category}</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
               {skills[category].map((skill, idx) => (
                 <div
                   key={idx}
-                  className="flex flex-col items-center justify-center bg-gray-50 shadow-sm rounded-lg p-4 hover:bg-purple-100 transition-colors"
+                  className="flex flex-col items-center justify-center bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-100 shadow-sm rounded-lg p-4 hover:bg-gray-200 dark:hover:bg-gray-1000 transition-colors duration-300"
                 >
-                  <div className="text-4xl mb-2">{skill.icon}</div>
-                  <p className="text-lg font-semibold text-gray-800">{skill.name}</p>
+                  <div className="text-4xl mb-2 dark:text-gray-300">{skill.icon}</div>
+                  <p className="text-lg font-semibold text-gray-800 dark:text-gray-300">{skill.name}</p>
                 </div>
               ))}
-            </div>
+            </div> 
           </div>
         ))}
       </div>
