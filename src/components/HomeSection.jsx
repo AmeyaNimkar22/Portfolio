@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import VantaTopologyBackground from "./VantaTopologyBackground";
 import HomeImage from "../assets/heroImg.jpeg";
+import { HashLink } from "react-router-hash-link";
 
 
 
@@ -42,7 +43,7 @@ const HomeSection = () => {
 
       <div className="container mx-auto px-6 md:px-12 lg:px-24 relative z-10 pt-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-          
+
           {/* LEFT CONTENT: TYPOGRAPHY & CTA */}
           <motion.div
             className="lg:col-span-7 space-y-8 text-center lg:text-left"
@@ -50,17 +51,17 @@ const HomeSection = () => {
             initial="hidden"
             animate="visible"
           >
-            
+
 
             <motion.div variants={itemVariants} className="space-y-2">
-             
+
               <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight leading-[1.1]">
                 Ameya <br />
                 <span className="relative">
                   <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-fuchsia-300 to-indigo-400">
                     Nimkar
                   </span>
-                  <motion.span 
+                  <motion.span
                     initial={{ width: 0 }}
                     animate={{ width: '100%' }}
                     transition={{ delay: 1, duration: 1 }}
@@ -70,25 +71,34 @@ const HomeSection = () => {
               </h1>
             </motion.div>
 
-            <motion.p 
+            <motion.p
               variants={itemVariants}
               className="text-slate-400 text-base md:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed font-light"
             >
               I build intelligent, scalable, and visually engaging web applications powered by AI and modern web technologies.
             </motion.p>
 
-            <motion.div 
+            <motion.div
               variants={itemVariants}
               className="flex flex-wrap items-center justify-center lg:justify-start gap-5 pt-4"
             >
-              <button className="group relative px-8 py-4 bg-white text-black font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95">
+              <HashLink
+                smooth
+                to="/#projects"
+                className="group relative px-8 py-4 bg-white text-black font-semibold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95"
+              >
                 <span className="relative z-10">View Portfolio</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-fuchsia-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              </button>
-              
-              <button className="px-8 py-4 bg-transparent border border-white/10 hover:border-white/40 hover:bg-white/5 text-white font-medium rounded-full backdrop-blur-sm transition-all duration-300">
+              </HashLink>
+
+              <HashLink
+                smooth
+                to="/#contact"
+                className="px-8 py-4 bg-transparent border border-white/10 hover:border-white/40 hover:bg-white/5 text-white font-medium rounded-full backdrop-blur-sm transition-all duration-300"
+              >
                 Let's Talk
-              </button>
+              </HashLink>
+
             </motion.div>
           </motion.div>
 
@@ -103,48 +113,48 @@ const HomeSection = () => {
             <div className="absolute w-64 h-64 bg-purple-600/20 rounded-full blur-[80px] animate-pulse" />
             <div className="absolute w-48 h-48 bg-blue-600/10 rounded-full blur-[60px] translate-x-12 -translate-y-12" />
 
-     <div className="relative z-10 group">
-  {/* Image Frame */}
-  <motion.div
-    animate={{ 
-      y: [0, -15, 0],
-      rotate: [0, 1, 0]
-    }}
-    transition={{ 
-      duration: 8, 
-      repeat: Infinity, 
-      ease: "easeInOut" 
-    }}
-    className="relative flex justify-center items-center"
-  >
-    <img
-      src={HomeImage}
-      alt="Ameya Nimkar"
-      className="w-48 md:w-80 object-contain drop-shadow-[0_20px_50px_rgba(168,85,247,0.25)] filter brightness-110 contrast-105"
-    />
-    
-    {/* Floating Badge Animation */}
-    <motion.div 
-      animate={{ y: [0, 10, 0] }}
-      transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-      className="absolute -bottom-4 right-0 md:right-4 bg-[#1a1a1a]/80 border border-white/10 backdrop-blur-xl p-3 rounded-2xl shadow-2xl"
-    >
-      <p className="text-[9px] uppercase tracking-tighter text-slate-500 font-bold">Tech Stack</p>
-      <div className="flex gap-2 mt-1">
-        <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
-        <div className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
-        <div className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
-      </div>
-    </motion.div>
-  </motion.div>
-</div>
+            <div className="relative z-10 group">
+              {/* Image Frame */}
+              <motion.div
+                animate={{
+                  y: [0, -15, 0],
+                  rotate: [0, 1, 0]
+                }}
+                transition={{
+                  duration: 8,
+                  repeat: Infinity,
+                  ease: "easeInOut"
+                }}
+                className="relative flex justify-center items-center"
+              >
+                <img
+                  src={HomeImage}
+                  alt="Ameya Nimkar"
+                  className="w-48 md:w-80 object-contain drop-shadow-[0_20px_50px_rgba(168,85,247,0.25)] filter brightness-110 contrast-105"
+                />
+
+                {/* Floating Badge Animation */}
+                <motion.div
+                  animate={{ y: [0, 10, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                  className="absolute -bottom-4 right-0 md:right-4 bg-[#1a1a1a]/80 border border-white/10 backdrop-blur-xl p-3 rounded-2xl shadow-2xl"
+                >
+                  <p className="text-[9px] uppercase tracking-tighter text-slate-500 font-bold">Tech Stack</p>
+                  <div className="flex gap-2 mt-1">
+                    <div className="w-1.5 h-1.5 rounded-full bg-blue-400" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-400" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-cyan-400" />
+                  </div>
+                </motion.div>
+              </motion.div>
+            </div>
           </motion.div>
 
         </div>
       </div>
 
       {/* SCROLL INDICATOR */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2, duration: 1 }}
