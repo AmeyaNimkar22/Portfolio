@@ -1,17 +1,40 @@
-import React from "react";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center px-6 md:px-20 py-12 bg-white dark:bg-gray-900 dark:text-gray-300">
-      <h2 className="text-4xl font-bold text-center mb-12 text-gray-700 dark:bg-gray-900 dark:text-gray-300 dark:text-purple-500 ">About Me</h2>
-      <div className="bg-purple-100 shadow-lg rounded-2xl p-8 md:p-12 text-gray-700 w-full max-w-4xl text-base leading-relaxed dark:bg-gray-700 dark:text-gray-300">
-        <p className="mb-6 text-grey-800 text-xl font-semibold ">
-          Hey! I'm Ameya, a full-stack developer with a passion for creating visually captivating and interactive web applications. With a strong foundation in HTML, CSS, JavaScript, and React, I bring ideas to life, blending sleek design with seamless functionality.
-        </p>
-        <p className="text-grey-800 text-xl font-semibold">
-          When I'm not coding, you'll find me sketching, reading books, or experimenting with new tech. I'm always pushing the boundaries of what's possible, constantly learning and building projects that inspire.
-        </p>
-      </div>
+    <section
+      id="about"
+      className="relative min-h-screen flex items-center justify-center px-6 md:px-24 py-24 bg-black text-white"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="w-full max-w-4xl"
+      >
+        {/* SECTION TITLE */}
+        <h2 className="text-4xl md:text-5xl font-semibold text-center mb-12">
+          About{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-fuchsia-400">
+            Me
+          </span>
+        </h2>
+
+        {/* GLASS CARD */}
+        <div className="relative rounded-2xl p-8 md:p-12 bg-white/5 backdrop-blur-xl border border-white/10 shadow-[0_0_40px_rgba(160,90,180,0.15)]">
+          <p className="mb-6 text-slate-300 text-lg md:text-xl leading-relaxed">
+            Hey! I’m <span className="text-purple-400 font-medium">Ameya</span>,
+            a T.E. Information Technology student at Savitribai Phule Pune University.
+            I’m passionate about building AI-driven applications, designing scalable backend systems and crafting responsive and interactive frontends.
+          </p>
+
+          <p className="text-slate-300 text-lg md:text-xl leading-relaxed">
+            From developing an ML-based schizophrenia detection system during my IEEE EMBS Internship to building AI-powered heritage intelligence platforms, I love solving real-world problems through technology.
+Beyond tech, I enjoy sketching, reading, anchoring events, and leading student initiatives as President of ITECH’SA.
+          </p>
+        </div>
+      </motion.div>
     </section>
   );
 };

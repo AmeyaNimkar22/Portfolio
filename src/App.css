@@ -1,0 +1,29 @@
+
+
+html {
+  scroll-behavior: smooth;
+  background-color: #050505; /* Deep black for the entire site */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #050505;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* Optional: Sleek scrollbar for the dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a855f7; /* Purple hover */
+}
