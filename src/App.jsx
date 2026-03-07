@@ -5,6 +5,8 @@ import SkillGrid from './components/SkillGrid';
 import Projects from './components/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ExperienceSection from './pages/ExperienceSection';
+import AchievementsSection from './pages/AchievementSection';
 
 
 function App() {
@@ -16,7 +18,9 @@ function App() {
         <HomeSection />
         <About />
         <SkillGrid />
+        <ExperienceSection />
         <Projects />
+        <AchievementsSection />
         <Contact />
 
       </main>
