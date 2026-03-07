@@ -9,8 +9,8 @@ const achievements = [
     icon: <Award className="w-8 h-8 text-blue-400" />,
     gridClass: "md:col-span-2 md:row-span-1",
     bg: "bg-blue-500/5",
-    description: "Published research paper: 'Design and Implementation of a Secure, Interactive, and Customizable Web-Based Trivia System'",
-    fullDescription: "Presented at ICRTSTM 2025; received Best PPT Award (UG Category)"
+    description: "Published research paper: 'Design and Implementation of a Secure, Interactive, and Customizable Web-Based Trivia System and recieved best PPT award (UG category)",
+    
   },
   {
     title: "NPTEL Java Elite",
@@ -26,13 +26,7 @@ const achievements = [
     gridClass: "md:col-span-1 md:row-span-1",
     bg: "bg-amber-500/5",
   },
-  {
-    title: "5-Star Proficient",
-    subtitle: "Problem Solving",
-    icon: <Crown className="w-8 h-8 text-fuchsia-400" />,
-    gridClass: "md:col-span-1 md:row-span-1",
-    bg: "bg-fuchsia-500/5",
-  },
+  
 ];
 
 const AchievementsSection = () => {
